@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal educativo e investigativo sobre la Ciudadanía Global Digital. Objetivos, justificación y marco teórico.">
+    <title>Ciudadanía Global Digital - Investigación y Educación</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <script src="js/traduccion.js" defer></script>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="nav-container">
+            <div class="logo" id="header-logo" data-i18n="header-logo">Ciudadanía Global Digital</div>
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link active" data-i18n="nav-home">Inicio</a></li>
+                <li><a href="#objetivos" class="nav-link" data-i18n="nav-objectives">Objetivos</a></li>
+                <li><a href="#justificacion" class="nav-link" data-i18n="nav-justification">Justificación</a></li>
+                <li><a href="#marco-teorico" class="nav-link" data-i18n="nav-theory">Marco Teórico</a></li>
+                <li><a href="paginas/contacto.html" class="nav-btn" id="nav-contact-btn" data-i18n="nav-contact">Contacto</a></li>
+                <li class="lang-selector-container">
+                    <select class="lang-selector" onchange="setLanguage(this.value)" aria-label="Seleccionar idioma">
+                        <option value="es">ES</option>
+                        <option value="en">EN</option>
+                        <option value="it">IT</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-badge" data-i18n="hero-badge">Estudio Contemporáneo</span>
+            <h1 class="hero-title" id="main-title" data-i18n="hero-title">Construyendo el Futuro de la <span>Convivencia Virtual</span></h1>
+            <p class="hero-description" data-i18n="hero-description">Explora los fundamentos, desafíos y propósitos de la ciudadanía global digital en la era de la información e interconexión.</p>
+            <div class="hero-actions">
+                <a href="#objetivos" class="btn btn-primary" id="hero-primary-btn" data-i18n="hero-primary-btn">Ver Objetivos</a>
+                <a href="#marco-teorico" class="btn btn-outline" id="hero-secondary-btn" data-i18n="hero-secondary-btn">Leer Marco Teórico</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objetivos Section -->
+    <section class="services" id="objetivos">
+        <div class="section-header">
+            <h2 class="section-title" data-i18n="obj-title">Objetivos del Proyecto</h2>
+            <p class="section-subtitle" data-i18n="obj-subtitle">Nuestras metas de investigación y acción para formar ciudadanos digitales éticos.</p>
+        </div>
+
+        <!-- Objetivo General in a highlighted container -->
+        <div class="section-content">
+            <div class="text-block" id="general-objective-block">
+                <h3 data-i18n="obj-gen-title">Objetivo General</h3>
+                <p data-i18n="obj-gen-desc"><strong>Promover el desarrollo de competencias digitales y éticas</strong> que permitan a las personas ejercer una ciudadanía global digital responsable, crítica, segura y comprometida con el desarrollo sostenible, el respeto a la diversidad cultural y la defensa de los derechos humanos en el entorno digital.</p>
+            </div>
+        </div>
+
+        <!-- Objetivos Específicos using the Card Grid -->
+        <div class="section-header" style="margin-top: 4rem; margin-bottom: 2rem;">
+            <h3 class="section-title" style="font-size: 1.8rem;" data-i18n="obj-spec-title">Objetivos Específicos</h3>
+        </div>
+        <div class="grid">
+            <!-- Card 1 -->
+            <div class="card" id="card-obj-1">
+                <div class="card-icon">📚</div>
+                <h3 class="card-title" data-i18n="card1-title">Alfabetización Mediática</h3>
+                <p class="card-description" data-i18n="card1-desc">Capacitar en el análisis crítico frente a la información digital, identificando noticias falsas (fake news) y fuentes no verificadas.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="card" id="card-obj-2">
+                <div class="card-icon">🤝</div>
+                <h3 class="card-title" data-i18n="card2-title">Ética y Empatía Virtual</h3>
+                <p class="card-description" data-i18n="card2-desc">Fomentar el respeto mutuo, la inclusión y la tolerancia activa en plataformas interactivas, mitigando el ciberacoso.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="card" id="card-obj-3">
+                <div class="card-icon">🛡️</div>
+                <h3 class="card-title" data-i18n="card3-title">Seguridad y Privacidad</h3>
+                <p class="card-description" data-i18n="card3-desc">Instruir sobre la gestión segura de datos personales, el entendimiento de la huella digital y buenas prácticas de ciberseguridad.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Justificación Section -->
+    <section class="services" id="justificacion" style="background: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+        <div class="section-header">
+            <h2 class="section-title" data-i18n="just-title">Justificación</h2>
+            <p class="section-subtitle" data-i18n="just-subtitle">¿Por qué es indispensable educar en ciudadanía digital hoy en día?</p>
+        </div>
+        
+        <div class="section-content">
+            <div class="text-block" id="justificacion-block">
+                <h3 data-i18n="just-heading">El Desafío de la Era Digital</h3>
+                <p data-i18n="just-p1">En un mundo globalizado y conectado por redes informáticas, las fronteras geográficas han dejado de ser el único límite de nuestra interacción. Actualmente, las acciones virtuales tienen repercusiones reales en el ámbito económico, político y social global. Por ello, la educación tradicional debe expandirse hacia la formación de competencias cibernéticas de alto nivel.</p>
+                <p data-i18n="just-p2">La importancia de esta investigación radica en la urgente necesidad de <strong>reducir la brecha digital y ética</strong>. La desinformación masiva, el robo de identidad, la manipulación de datos y la polarización en redes sociales amenazan el tejido democrático. Formar ciudadanos digitales garantiza que las tecnologías emergentes sirvan como herramientas de progreso y cohesión social, en lugar de división.</p>
+                <p data-i18n="just-p3">Al dotar a las personas con el criterio necesario para navegar de forma segura y productiva, no solo protegemos su bienestar individual, sino que también estimulamos la innovación colaborativa internacional.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marco Teórico Section -->
+    <section class="services" id="marco-teorico">
+        <div class="section-header">
+            <h2 class="section-title" data-i18n="theory-title">Marco Teórico</h2>
+            <p class="section-subtitle" data-i18n="theory-subtitle">Fundamentos conceptuales de la Ciudadanía Global Digital.</p>
+        </div>
+        
+        <div class="section-content">
+            <div class="text-block" id="marco-teorico-block">
+                <h3 data-i18n="theory-t1">1. Concepto de Ciudadanía Digital</h3>
+                <p data-i18n="theory-p1">Según el autor clásico en la materia, <strong>Mike Ribble (2015)</strong>, la ciudadanía digital se define como las normas de comportamiento que conciernen al uso de la tecnología. Ribble estructura este concepto en nueve áreas generales, las cuales se dividen en categorías de respeto, educación y protección del entorno web.</p>
+                
+                <h3 data-i18n="theory-t2">2. La Perspectiva Global de la UNESCO</h3>
+                <p data-i18n="theory-p2">La ciudadanía global digital expande el concepto local. Incorpora el civismo global, promoviendo que los usuarios de internet se asuman como <strong>miembros de una comunidad mundial</strong>. Bajo esta mirada, compartimos la responsabilidad de resolver problemas de carácter internacional (como el cambio climático o los derechos humanos) mediante la cooperación y redes virtuales de colaboración.</p>
+
+                <h3 data-i18n="theory-t3">3. Pilares Fundamentales</h3>
+                <p data-i18n="theory-p3">El marco conceptual de este estudio se agrupa en tres pilares esenciales que determinan la madurez de un ciudadano digital:</p>
+                <ul class="list-styled">
+                    <li data-i18n="pilar1"><strong>Alfabetización Digital:</strong> El proceso de enseñanza y aprendizaje acerca de la tecnología y su utilización de forma constructiva.</li>
+                    <li data-i18n="pilar2"><strong>Netiqueta y Leyes Digitales:</strong> Los estándares de conducta y comportamiento ético, así como la comprensión de la legislación aplicable a delitos cibernéticos y propiedad intelectual.</li>
+                    <li data-i18n="pilar3"><strong>Seguridad y Privacidad:</strong> Las precauciones de seguridad física y lógica necesarias para garantizar la integridad personal en la red.</li>
+                </ul>
+
+                <h3 data-i18n="theory-t4">4. Ciudadanía Crítica en la Sociedad de la Información</h3>
+                <p data-i18n="theory-p4">En consonancia con teóricos de la sociología de la comunicación como <strong>Manuel Castells</strong>, la sociedad red requiere de individuos proactivos. El ciudadano del siglo XXI debe trascender el rol de mero consumidor de contenidos; debe posicionarse como un creador de valor que utiliza la tecnología para la transformación ética de su entorno global.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo" id="footer-logo" data-i18n="header-logo">Ciudadanía Global Digital</div>
+            <p class="footer-text" data-i18n="footer-text">© 2026 Portal de Investigación en Educación Digital. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
